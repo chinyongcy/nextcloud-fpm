@@ -5,3 +5,4 @@ RUN apt update && apt -y install \
     pecl install smbclient
 RUN echo "extension=smbclient.so" > /usr/local/etc/php/conf.d/docker-php-ext-smbclient.ini
 RUN echo "extension=smbclient.so" >> /usr/local/etc/php/conf.d/nextcloud.ini
+RUN pecl install inotify
