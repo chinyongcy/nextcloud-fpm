@@ -1,5 +1,4 @@
-FROM nextcloud:fpm
-# 30.0.4-fpm
+FROM nextcloud:30.0.4-fpm
 RUN apt update && apt -y install \
     smbclient libsmbclient-dev libmagickwand-dev  && \
     pecl install smbclient
